@@ -1,1 +1,1 @@
-Etch a sketch project (DOM practice)
+# Etch a sketch project (DOM practice)
