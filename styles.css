@@ -19,7 +19,7 @@ button {
   cursor: pointer;
   outline: inherit;
 }
-#create-grid-button {
+#generate-grid-button {
   padding: 20px;
   font-size: 28px;
   background-color: white;
