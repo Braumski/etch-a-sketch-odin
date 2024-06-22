@@ -37,12 +37,8 @@ button {
   height: 900px;
 }
 
-#drawing-div {
-  /* box-sizing: border-box; */
+.drawing-div {
   outline: 1px solid black;
   background-color: rgb(63, 103, 126);
-}
-
-#drawn {
-  background-color: white;
+  opacity: 1;
 }

@@ -10,12 +10,21 @@ function gridGenerator(heightAndWidth) {
 
   for (let i = 0; i < totalArea; i++) {
     const newDiv = document.createElement("div");
-    newDiv.id = "drawing-div";
+    newDiv.classList.add("drawing-div");
     newDiv.style.width = `calc(100% / ${heightAndWidth})`;
     newDiv.style.height = `calc(100% / ${heightAndWidth})`;
     container.appendChild(newDiv);
+
     newDiv.addEventListener("mouseover", () => {
       newDiv.style.backgroundColor = "white";
+      reduceOpacity(newDiv);
+
+      function reduceOpacity(div) {
+        const opacity = parseFloat(div.style.opacity || "1");
+        if (opacity > 0) {
+          div.style.opacity = (opacity - 0.05).toFixed(2);
+        }
+      }
     });
   }
 
